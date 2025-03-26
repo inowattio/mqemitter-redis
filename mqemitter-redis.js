@@ -7,6 +7,13 @@ const inherits = require('inherits')
 const { LRUCache } = require('lru-cache')
 const msgpack = require('msgpack-lite')
 const EE = require('events').EventEmitter
+const winston = require('winston')
+
+const logger = winston.createLogger({
+  transports: [
+    new winston.transports.Console()
+  ]
+})
 
 function MQEmitterRedis (opts) {
   if (!(this instanceof MQEmitterRedis)) {
@@ -34,8 +41,12 @@ function MQEmitterRedis (opts) {
   const that = this
 
   function onError (err) {
-    if (err && !that.closing) {
-      that.state.emit('error', err)
+    try {
+      if (err && !that.closing) {
+        that.state.emit('error', err)
+      }
+    } catch (errorHandlingError) {
+      logger.error({ message: 'Error on redis emitter', logger: 'mqEmitterRedis', payload: errorHandlingError })
     }
   }
 
@@ -59,6 +70,7 @@ function MQEmitterRedis (opts) {
 
   this.subConn.on('connect', function () {
     that.state.emit('subConnect')
+    logger.info({ message: 'subConnect connected to redis', logger: 'mqEmitterRedis', payload: {} })
   })
 
   this.subConn.on('error', function (err) {
@@ -67,6 +79,7 @@ function MQEmitterRedis (opts) {
 
   this.pubConn.on('connect', function () {
     that.state.emit('pubConnect')
+    logger.info({ message: 'pubConnect connected to redis', logger: 'mqEmitterRedis', payload: {} })
   })
 
   this.pubConn.on('error', function (err) {
@@ -189,7 +202,7 @@ MQEmitterRedis.prototype.removeListener = function (topic, cb, done) {
 
 MQEmitterRedis.prototype._containsWildcard = function (topic) {
   return (topic.indexOf(this._opts.wildcardOne) >= 0) ||
-         (topic.indexOf(this._opts.wildcardSome) >= 0)
+    (topic.indexOf(this._opts.wildcardSome) >= 0)
 }
 
 function noop () {}
@@ -201,6 +214,7 @@ function MQEmitterRedisPrefix (pubSubPrefix, options) {
   this._pubSubPrefix = pubSubPrefix
   this._sym_proxiedCallback = Symbol('proxiedCallback')
 }
+
 inherits(MQEmitterRedisPrefix, MQEmitterRedis)
 MQEmitterRedisPrefix.prototype.on = function (topic, cb, done) {
   const t = this._pubSubPrefix + topic
