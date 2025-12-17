@@ -2911,10 +2911,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lru-cache@npm:11.1.0":
-  version: 11.1.0
-  resolution: "lru-cache@npm:11.1.0"
-  checksum: 10/5011011675ca98428902de774d0963b68c3a193cd959347cb63b781dad4228924124afab82159fd7b8b4db18285d9aff462b877b8f6efd2b41604f806c1d9db4
+"lru-cache@npm:11.2.4":
+  version: 11.2.4
+  resolution: "lru-cache@npm:11.2.4"
+  checksum: 10/3b2da74c0b6653767f8164c38c4c4f4d7f0cc10c62bfa512663d94a830191ae6a5af742a8d88a8b30d5f9974652d3adae53931f32069139ad24fa2a18a199aca
   languageName: node
   linkType: hard
 
@@ -3152,22 +3152,22 @@ __metadata:
     hyperid: "npm:3.3.0"
     inherits: "npm:2.0.4"
     ioredis: "npm:5.8.2"
-    lru-cache: "npm:11.1.0"
-    mqemitter: "npm:7.0.0"
+    lru-cache: "npm:11.2.4"
+    mqemitter: "npm:7.1.0"
     msgpack-lite: "npm:0.1.26"
     neostandard: "npm:^0.12.1"
-    tsd: "npm:^0.33.0"
+    tsd: "npm:0.33.0"
     winston: "npm:3.19.0"
   languageName: unknown
   linkType: soft
 
-"mqemitter@npm:7.0.0":
-  version: 7.0.0
-  resolution: "mqemitter@npm:7.0.0"
+"mqemitter@npm:7.1.0":
+  version: 7.1.0
+  resolution: "mqemitter@npm:7.1.0"
   dependencies:
     fastparallel: "npm:^2.4.1"
     qlobber: "npm:^8.0.1"
-  checksum: 10/a94d2886a4cc67b6e2e288c2a92828224dee6ce81fd47090069104fd2ca6552023886b79373422f6cee6494a0c0a9cf008be8af5b4f7db27fb47579853d3b032
+  checksum: 10/11e8f418ac882f3fefc7055c72cc921d92a66f75118739a5686ba62d46f40efb14aa5bf6a93300599bfb2ec0d218f8b75727986c524ffca5e095123fb3929ba3
   languageName: node
   linkType: hard
 
@@ -4391,7 +4391,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsd@npm:^0.33.0":
+"tsd@npm:0.33.0":
   version: 0.33.0
   resolution: "tsd@npm:0.33.0"
   dependencies:
