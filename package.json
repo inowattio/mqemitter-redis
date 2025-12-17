@@ -14,7 +14,7 @@
     "lru-cache": "11.1.0",
     "mqemitter": "7.0.0",
     "msgpack-lite": "0.1.26",
-    "winston": "3.17.0"
+    "winston": "3.19.0"
   },
   "devDependencies": {
     "@fastify/pre-commit": "^2.2.0",
