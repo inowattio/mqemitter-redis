@@ -157,7 +157,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fastify/pre-commit@npm:^2.2.0":
+"@fastify/pre-commit@npm:^2.2.1":
   version: 2.2.1
   resolution: "@fastify/pre-commit@npm:2.2.1"
   dependencies:
@@ -205,10 +205,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ioredis/commands@npm:1.4.0":
-  version: 1.4.0
-  resolution: "@ioredis/commands@npm:1.4.0"
-  checksum: 10/ea299f22057139261ebd7dbc7fc85615e90c254e667620a276d3cf771b9d9190ffbdf25af6586c3f52598a2c830d64bee17f32c3ce734db403e93f73548d54d4
+"@ioredis/commands@npm:1.5.1":
+  version: 1.5.1
+  resolution: "@ioredis/commands@npm:1.5.1"
+  checksum: 10/7efb0339302094aed30903ccbf8ca24d6048cff0d556114f43004c2e02d0808e6619a814ca72d6ea00586972fab7aae6c18892f9feabea56e632fb2db34b09db
   languageName: node
   linkType: hard
 
@@ -979,13 +979,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"buffer@npm:^5.2.1":
-  version: 5.7.1
-  resolution: "buffer@npm:5.7.1"
+"buffer@npm:^6.0.3":
+  version: 6.0.3
+  resolution: "buffer@npm:6.0.3"
   dependencies:
     base64-js: "npm:^1.3.1"
-    ieee754: "npm:^1.1.13"
-  checksum: 10/997434d3c6e3b39e0be479a80288875f71cd1c07d75a3855e6f08ef848a3c966023f79534e22e415ff3a5112708ce06127277ab20e527146d55c84566405c7c6
+    ieee754: "npm:^1.2.1"
+  checksum: 10/b6bc68237ebf29bdacae48ce60e5e28fc53ae886301f2ad9496618efac49427ed79096750033e7eab1897a4f26ae374ace49106a5758f38fb70c78c9fda2c3b1
   languageName: node
   linkType: hard
 
@@ -2265,14 +2265,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hyperid@npm:3.3.0":
-  version: 3.3.0
-  resolution: "hyperid@npm:3.3.0"
+"hyperid@npm:4.0.0":
+  version: 4.0.0
+  resolution: "hyperid@npm:4.0.0"
   dependencies:
-    buffer: "npm:^5.2.1"
-    uuid: "npm:^8.3.2"
-    uuid-parse: "npm:^1.1.0"
-  checksum: 10/7cc4a9321bbf266bac9d19230c8107403418dbe993c61cae10c4b63a613537cea76346aa4237e69bc989dd446a1b088d6d4a5e09c75a75277f9dfe3cdcbb2835
+    buffer: "npm:^6.0.3"
+  checksum: 10/ecd2bf80709c2aff0641c6d2e5e1f6ff7de34b5bde0cba96ebff7232925b6483bfa5e93e969baf38fe816c7932b15c65dfef157de93d86c8ad9288cc1f89d067
   languageName: node
   linkType: hard
 
@@ -2285,7 +2283,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ieee754@npm:^1.1.13, ieee754@npm:^1.1.8":
+"ieee754@npm:^1.1.8, ieee754@npm:^1.2.1":
   version: 1.2.1
   resolution: "ieee754@npm:1.2.1"
   checksum: 10/d9f2557a59036f16c282aaeb107832dc957a93d73397d89bbad4eb1130560560eb695060145e8e6b3b498b15ab95510226649a0b8f52ae06583575419fe10fc4
@@ -2355,11 +2353,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ioredis@npm:5.8.2":
-  version: 5.8.2
-  resolution: "ioredis@npm:5.8.2"
+"ioredis@npm:5.10.1":
+  version: 5.10.1
+  resolution: "ioredis@npm:5.10.1"
   dependencies:
-    "@ioredis/commands": "npm:1.4.0"
+    "@ioredis/commands": "npm:1.5.1"
     cluster-key-slot: "npm:^1.1.0"
     debug: "npm:^4.3.4"
     denque: "npm:^2.1.0"
@@ -2368,7 +2366,7 @@ __metadata:
     redis-errors: "npm:^1.2.0"
     redis-parser: "npm:^3.0.0"
     standard-as-callback: "npm:^2.1.0"
-  checksum: 10/550cbe7bba409b5bc38fa290fd2de7f569548603892904680db0f5e74f7163e52e067428be766d9e4d1a7f1220f93abe8e1687804aab951a96a6dafc289947eb
+  checksum: 10/a85786fc17e7180ac342219ebef5c138b82d056c44c00470a1827f7a4b2499041fa13f253b337aeca2ab6681a2bf52b622ca541e9c9a993d81f1b1e6f21ab59a
   languageName: node
   linkType: hard
 
@@ -2911,10 +2909,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lru-cache@npm:11.2.4":
-  version: 11.2.4
-  resolution: "lru-cache@npm:11.2.4"
-  checksum: 10/3b2da74c0b6653767f8164c38c4c4f4d7f0cc10c62bfa512663d94a830191ae6a5af742a8d88a8b30d5f9974652d3adae53931f32069139ad24fa2a18a199aca
+"lru-cache@npm:11.3.6":
+  version: 11.3.6
+  resolution: "lru-cache@npm:11.3.6"
+  checksum: 10/d69ab552776954c7d310a6b2843e7d6be3a1c36c0ce45fca373c225ce5a06b95fd4ed724305d9d15fa55aa24d3cd42f854aa061bc481241225b3accf32993eab
   languageName: node
   linkType: hard
 
@@ -3146,13 +3144,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "mqemitter-redis@workspace:."
   dependencies:
-    "@fastify/pre-commit": "npm:^2.2.0"
+    "@fastify/pre-commit": "npm:^2.2.1"
     "@types/node": "npm:^24.0.14"
     eslint: "npm:^9.24.0"
-    hyperid: "npm:3.3.0"
+    hyperid: "npm:4.0.0"
     inherits: "npm:2.0.4"
-    ioredis: "npm:5.8.2"
-    lru-cache: "npm:11.2.4"
+    ioredis: "npm:5.10.1"
+    lru-cache: "npm:11.3.6"
     mqemitter: "npm:7.1.0"
     msgpack-lite: "npm:0.1.26"
     neostandard: "npm:^0.12.1"
@@ -4637,22 +4635,6 @@ __metadata:
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 10/474acf1146cb2701fe3b074892217553dfcf9a031280919ba1b8d651a068c9b15d863b7303cb15bd00a862b498e6cf4ad7b4a08fb134edd5a6f7641681cb54a2
-  languageName: node
-  linkType: hard
-
-"uuid-parse@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "uuid-parse@npm:1.1.0"
-  checksum: 10/8a384d34c04a6bc5b33262f431026e2a923cfcfb72996e2daa2fc5de2f0738bac41c0182fdcf1a22d6391b725c625eca0bdbd9d36f1c01ce5d24b1d66601d2af
-  languageName: node
-  linkType: hard
-
-"uuid@npm:^8.3.2":
-  version: 8.3.2
-  resolution: "uuid@npm:8.3.2"
-  bin:
-    uuid: dist/bin/uuid
-  checksum: 10/9a5f7aa1d6f56dd1e8d5f2478f855f25c645e64e26e347a98e98d95781d5ed20062d6cca2eecb58ba7c84bc3910be95c0451ef4161906abaab44f9cb68ffbdd1
   languageName: node
   linkType: hard
 
